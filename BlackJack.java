@@ -2,6 +2,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 // Jared Lee
+// 1-21-25
+// Assignment to change Blackjack code
 public class BlackJack {
 
     private static final String[] SUITS = { "Hearts", "Diamonds", "Clubs", "Spades" };
