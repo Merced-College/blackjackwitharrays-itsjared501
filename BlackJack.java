@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
+// Jared Lee
 public class BlackJack {
 
     private static final String[] SUITS = { "Hearts", "Diamonds", "Clubs", "Spades" };
