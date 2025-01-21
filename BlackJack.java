@@ -116,40 +116,40 @@ public class BlackJack {
      private static int dealerTurn(int dealerTotal) {
      while (dealerTotal < 17) {
             int newCard = dealCard();
-      dealerTotal += cardValue(newCard);
+            dealerTotal += cardValue(newCard);
         }
-
         //at most, the highest value added will be 10        
         System.out.println("Dealer's total is " + dealerTotal);
         return dealerTotal;
-    }
+    } //dealers turn just gives their hand total
 
     // the winner has three potential results: player wins tie, and dealer wins    
-    private static void determineWinner2(int playerTotal, int dealerTotal) {
+    private static void determineWinner(int playerTotal, int dealerTotal) {
         if ((dealerTotal > 21) || (playerTotal > dealerTotal)) {
-            System.out.println("You win!");
-     em.out.println("It's a tie!");
-           } else {
-            System.out.println("Dealer wins!");
+            System.out.println("You win!"); //two win conditions: dealer bust or higher value than dealer
+        }
+        else if (dealerTotal == playerTotal) {
+            System.out.println("It's a tie!");
+        } else {
+            System.out.println("Dealer wins!"); 
         }
     }
 
     //this'll return the remainder of deck size divided by 13        
     private static int dealCard() {
-        return DECK[currentCardIndex++] % 13; //index value is incremented of original value
+        return DECK[currentCardIndex++] % 13; //index value is incremented of original value everytime this methods called
     }
     
-    //
-    //the carvValue method returns the card 
+    //the cardValue method returns the card 
     private static int cardValue(int card) {
         return card < 9 ? + 2 :  10; //will either return array value or a null value card
     }
-    
+    //this method is not used throughout main
     int linearSearch(int[] numbers, int key) {
         int i = 0;
         for (i = 0; i < numbers.length; i++) {
             if (numbers[i] == key) {
-                return i;
+                return i; //returns original array value or null value
             }
         }
         return -1; // not found
