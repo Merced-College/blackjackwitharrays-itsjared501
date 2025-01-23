@@ -141,8 +141,8 @@ public class BlackJack {
     }
     
     //the cardValue method returns the card 
-    private static int cardValue(int card) {
-        return card < 9 ? + 2 :  10; //will either return array value or a null value card
+    private static int cardValue(int card) { //"card" is the value returned from dealCard method
+    return card < 9 ? + 2 :  10; //the card returned is going to be __+2 if less than nine, otherwise will be 10
     }
     //this method is not used throughout main
     int linearSearch(int[] numbers, int key) {
