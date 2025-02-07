@@ -96,7 +96,7 @@ public class BlackJack {
         return cardValue(card1);
     }
     //the 'main' part of the game, inputs are the players input + the total of their current deck
-    //allows player to decide 
+    //allows player to decide
     private static int playerTurn(Scanner scanner, int playerTotal) {
         //while (true) loop continues until break; which depends on player action 
         while (true) {
