@@ -1,7 +1,7 @@
 //Angel Grajeda-Cervantes (lines 1-55)
 //Andreas Hitt            (lines 56-110) 
 //Jared Lee               (lines 111-end)
-//1/21/25
+//1/21/2025
 //Assignment to update blackjack, 
 
 //This code imports the Random class, which is used to generate random numbers.
